@@ -69,7 +69,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <EnableCppCoreCheck>true</EnableCppCoreCheck>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -84,6 +88,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <EnablePREfast>false</EnablePREfast>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -115,6 +120,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="C++Playground.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C++Playground.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="22. GenerateParenthesis.h" />
+    <ClInclude Include="239. Sliding Window Maximum.h" />
+    <ClInclude Include="424. Longest Repeating Character Replacement.h" />
+    <ClInclude Include="LengthOfLongestSubstring.h" />
+    <ClInclude Include="MaxProductFromAnArray.h" />
+    <ClInclude Include="MergeTwoSortedLists.h" />
+    <ClInclude Include="SearchForARange.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="ValidateParenthesis.h" />
+    <ClInclude Include="WidthOfBinaryTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
