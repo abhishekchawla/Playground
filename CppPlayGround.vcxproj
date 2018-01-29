@@ -130,6 +130,7 @@
     <ClInclude Include="239. Sliding Window Maximum.h" />
     <ClInclude Include="424. Longest Repeating Character Replacement.h" />
     <ClInclude Include="LengthOfLongestSubstring.h" />
+    <ClInclude Include="146. LRU Cache.h" />
     <ClInclude Include="MaxProductFromAnArray.h" />
     <ClInclude Include="MergeTwoSortedLists.h" />
     <ClInclude Include="SearchForARange.h" />
