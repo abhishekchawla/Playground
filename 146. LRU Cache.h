@@ -15,7 +15,6 @@ Could you do both operations in O(1) time complexity?*/
 class LRUCache {
 
 private:
-
 	int _capacity;
 	unordered_map<int, pair<int, list<int>::iterator>> _map;
 	list<int> _lst;
