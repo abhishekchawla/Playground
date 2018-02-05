@@ -131,6 +131,7 @@
     <ClInclude Include="22. GenerateParenthesis.h" />
     <ClInclude Include="239. Sliding Window Maximum.h" />
     <ClInclude Include="424. Longest Repeating Character Replacement.h" />
+    <ClInclude Include="49. Group Anagrams.h" />
     <ClInclude Include="LengthOfLongestSubstring.h" />
     <ClInclude Include="146. LRU Cache.h" />
     <ClInclude Include="MaxProductFromAnArray.h" />
