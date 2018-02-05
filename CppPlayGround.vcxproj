@@ -89,6 +89,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <EnablePREfast>false</EnablePREfast>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -126,6 +127,7 @@
     <None Include="C++Playground.sln" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="15. 3Sum.h" />
     <ClInclude Include="22. GenerateParenthesis.h" />
     <ClInclude Include="239. Sliding Window Maximum.h" />
     <ClInclude Include="424. Longest Repeating Character Replacement.h" />

@@ -56,5 +56,8 @@
     <ClInclude Include="146. LRU Cache.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="15. 3Sum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
